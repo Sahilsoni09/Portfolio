@@ -1,23 +1,33 @@
-import React from "react";
-
-const PortfolioCard = () => {
+function PortfolioCard() {
   return (
-    <div className="bg-[#111] text-white rounded-lg p-4 w-full max-w-sm shadow-md">
-      <img src="./product.jpg" alt="Project" className="rounded-md mb-4" />
+    <div className="w-[360px] h-[419px] relative rounded-[10px] border-[1px] border-[#646464]">
+      <img
+        className="w-[300px] h-[200px] absolute top-[30px] left-[30px] rounded-[10px]"
+        src="./PortfolioCardImage.png"
+      />
 
-      <h3 className="text-lg font-semibold mb-2">Chaintech Product</h3>
-
-      <div className="flex flex-wrap gap-2 text-sm mb-4">
-        <span className="bg-[#222] px-2 py-1 rounded-full">UX Design</span>
-        <span className="bg-[#222] px-2 py-1 rounded-full">Angular</span>
-        <span className="bg-[#222] px-2 py-1 rounded-full">JavaScript</span>
+      <div className="absolute top-[253px] left-[30px]">
+        <h4 className="font-bold text-[24px] leading-[100%] tracking-normal text-white w-[232px] h-[24px]">
+          Chaintech Product
+        </h4>
+        <div className="flex items-center gap-[5px] text-black test-[14px] leading-[100%] tracking-normal font-normal w-[86px] h-[24px] absolute top-[49px]">
+          <span className="bg-[#E9DFFC] rounded-[12px] border-[1px] border-[#BE9FF6] pt-[4px] pr-[8px] pb-[4px] pl-[8px] whitespace-nowrap">
+            UX Design
+          </span>
+          <span className="bg-[#E9DFFC] rounded-[12px] border-[1px] border-[#BE9FF6] pt-[4px] pr-[8px] pb-[4px] pl-[8px]">
+            Angular
+          </span>
+          <span className="bg-[#E9DFFC] rounded-[12px] border-[1px] border-[#BE9FF6] pt-[4px] pr-[8px] pb-[4px] pl-[8px]">
+            JavaScript
+          </span>
+        </div>
       </div>
 
-      <button className="bg-[#222] w-full py-2 rounded-md hover:bg-[#333]">
-        View Product&nbsp; <span className="text-sm text-gray-400">Detail</span>
+      <button className="absolute w-[300px] h-[40px] top-[349px] left-[30px] px-[12px] py-[24px] bg-[#292929] text-white flex items-center justify-center">
+        View Product detail
       </button>
     </div>
   );
-};
+}
 
 export default PortfolioCard;

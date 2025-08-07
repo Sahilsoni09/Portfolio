@@ -13,6 +13,7 @@ function App() {
       <Nav />
       <Hero />
       <Stats />
+      <Portfolio />
       {/* <Hero />
       <StatsSection />
       <Portfolio />
