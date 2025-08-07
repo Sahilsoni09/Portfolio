@@ -30,7 +30,7 @@ function Hero() {
 
       <img
         src="./hero-image.jpg"
-        className=" h-[455px] w-[361px] absolute left-[1068px] top-[183px] rounded-[10px]"
+        className=" h-[40.938rem] w-[35.063rem] absolute left-[1068px] top-[183px] rounded-[10px]"
       />
     </div>
   );

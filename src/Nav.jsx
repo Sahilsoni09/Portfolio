@@ -1,6 +1,6 @@
 function Nav() {
   return (
-    <nav className="flex justify-between items-center text-white pt-[50px] pr-[100px] pb-[30px] pl-[100px] h-[120px] w-full max-w-[1728px]">
+    <nav className="flex justify-between items-center text-white pt-[50px] pr-[100px] pb-[30px] pl-[100px] h-[120px] max-w-[1728px]">
       <div className="flex justify-center items-center gap-[5px] w-[73px] h-[27px]">
         <img src="./logo.png" className="w-[26.03px] h-[26.04px]" />
         <span className="text-[20px] text-white w-[47px] h-[20px] font-bold leading-[100%]">
