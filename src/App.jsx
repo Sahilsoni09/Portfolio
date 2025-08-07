@@ -5,12 +5,10 @@ import Nav from "./Nav";
 import Portfolio from "./Portfolio";
 import Skills from "./Skills";
 import Stats from "./Stats";
-import StatsSection from "./StatsSection";
-import Testimonial from "./Testimonial";
 
 function App() {
   return (
-    <div className=" bg-black flex flex-1 flex-col min-h-screen overflow-x-hidden relative font-poppins">
+    <div className=" bg-black flex flex-1 flex-col min-h-screen overflow-x-hidden relative font-poppins scroll-smooth">
       <Nav />
       <Hero />
       <Stats />
@@ -18,12 +16,6 @@ function App() {
       <Skills />
       <About />
       <Footer />
-      {/* <Hero />
-      <StatsSection />
-      <Portfolio />
-      <Skills />
-      <Testimonial />
-      <Footer /> */}
     </div>
   );
 }

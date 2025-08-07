@@ -1,6 +1,9 @@
 function Footer() {
   return (
-    <div className="absolute top-[4202px] left-[91px] rounded-[15px]">
+    <section
+      id="footer"
+      className="absolute top-[4202px] left-[91px] rounded-[15px]"
+    >
       <img src="./footer.png" />
 
       <footer className="flex justify-between items-center text-white pt-[50px] pr-[100px] pb-[30px] pl-[100px] h-[120px] max-w-[1728px]">
@@ -18,7 +21,7 @@ function Footer() {
           <li>About Me</li>
         </ul>
       </footer>
-    </div>
+    </section>
   );
 }
 

@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <div>
+    <section id="hero">
       <div className="absolute top-[170px] left-[98px] w-[957px] h-[668px]">
         <div className="gap-[18px] flex flex-col">
           <div className="w-[956px] h-[338px] font-extrabold text-[188px] leading-[90%] text-white tracking-normal align-middle ">
@@ -32,7 +32,7 @@ function Hero() {
         src="./hero-image.jpg"
         className=" h-[40.938rem] w-[35.063rem] absolute left-[1068px] top-[183px] rounded-[10px]"
       />
-    </div>
+    </section>
   );
 }
 

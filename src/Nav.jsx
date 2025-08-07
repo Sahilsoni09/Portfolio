@@ -9,10 +9,18 @@ function Nav() {
       </div>
 
       <ul className="flex gap-[30px] w-[347px] h-[18px] text-[18px] font-normal ">
-        <li>Home</li>
-        <li>Portfolio</li>
-        <li>Skills</li>
-        <li>About Me</li>
+        <li>
+          <a href="#hero">Home</a>
+        </li>
+        <li>
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#about">About Me</a>
+        </li>
       </ul>
       <button className="w-[141px] h-[40px] bg-[#925FF0] gap-[5px] flex items-center justify-center text-white font-normal rounded-[4px] pt-[12px] pr-[24px] pb-[12px] pl-[24px] text-[16px]">
         <span>Contact</span>

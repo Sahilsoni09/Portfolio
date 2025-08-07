@@ -2,7 +2,7 @@ import SkillsCard from "./SkillsCard";
 
 function Skills() {
   return (
-    <div>
+    <section id="skills">
       <h4 className="h-[166px] w-[52px] absolute top-[2479px] left-[99px] font-bold text-[52px] leading-[100%] tracking-normal text-white">
         SKILLS
       </h4>
@@ -11,7 +11,7 @@ function Skills() {
           <SkillsCard key={ind} />
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 
