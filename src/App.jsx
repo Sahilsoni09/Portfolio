@@ -1,3 +1,4 @@
+import About from "./About";
 import Footer from "./Footer";
 import Hero from "./Hero";
 import Nav from "./Nav";
@@ -14,6 +15,8 @@ function App() {
       <Hero />
       <Stats />
       <Portfolio />
+      <Skills />
+      <About />
       {/* <Hero />
       <StatsSection />
       <Portfolio />
