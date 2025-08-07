@@ -10,13 +10,14 @@ import Testimonial from "./Testimonial";
 
 function App() {
   return (
-    <div className=" bg-black flex flex-1 flex-col min-h-screen overflow-x-hidden relative">
+    <div className=" bg-black flex flex-1 flex-col min-h-screen overflow-x-hidden relative font-poppins">
       <Nav />
       <Hero />
       <Stats />
       <Portfolio />
       <Skills />
       <About />
+      <Footer />
       {/* <Hero />
       <StatsSection />
       <Portfolio />
