@@ -2,7 +2,7 @@ function About() {
   return (
     <section
       id="about"
-      className="w-[1728px] h-[636px] absolute top-[3339px] bg-[url('./About.svg')] bg-cover"
+      className="w-[1728px] h-[636px] absolute top-[3339px] bg-gradient-to-r from-[#FF512F] via-[#DD2476] to-[#FFB88C]"
     >
       <div className="w-[1094px] h-[446px] flex flex-col items-center gap-[40px] absolute top-[95px] left-[317px]">
         <h4 className="w-[458px] h-[50px] font-semibold text-[48px] leading-[105%] tracking-normal text-white">
