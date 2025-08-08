@@ -2,11 +2,12 @@ import SkillsCard from "./SkillsCard";
 
 function Skills() {
   return (
-    <section id="skills">
-      <h4 className="h-[166px] w-[52px] absolute top-[2479px] left-[99px] font-bold text-[52px] leading-[100%] tracking-normal text-white">
+    <section id="skills" className="max-w-[1728px] mx-auto px-4 md:px-12 py-16">
+      <h4 className="text-white font-bold text-4xl md:text-[52px] mb-8">
         SKILLS
       </h4>
-      <div className="grid grid-cols-2 absolute w-[1531px] h-[660px] top-[2568px] left-[99px] gap-[20px]">
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {Array.from({ length: 4 }).map((_, ind) => (
           <SkillsCard key={ind} />
         ))}
@@ -14,5 +15,4 @@ function Skills() {
     </section>
   );
 }
-
 export default Skills;

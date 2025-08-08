@@ -1,27 +1,51 @@
 function Footer() {
   return (
-    <section
+    <footer
       id="footer"
-      className="absolute top-[4202px] left-[91px] rounded-[15px]"
+      className="bg-black text-white py-10 px-4 sm:px-12 mt-12"
     >
-      <img src="./footer.png" />
+      <div className="w-full max-w-[1728px] mx-auto">
+        <img
+          src="./footer.png"
+          alt="footer banner"
+          className="w-full h-auto rounded-lg mb-8"
+        />
+      </div>
 
-      <footer className="flex justify-between items-center text-white pt-[50px] pr-[100px] pb-[30px] pl-[100px] h-[120px] max-w-[1728px]">
-        <div className="flex justify-center items-center gap-[5px] w-[73px] h-[27px]">
-          <img src="./logo.png" className="w-[26.03px] h-[26.04px]" />
-          <span className="text-[20px] text-white w-[47px] h-[20px] font-bold leading-[100%]">
-            Web
-          </span>
+      <div className="max-w-[1728px] mx-auto flex flex-col sm:flex-row justify-between items-center gap-6 sm:gap-0">
+        <div className="flex items-center gap-2">
+          <img
+            src="./logo.png"
+            alt="logo"
+            className="w-6 h-6 md:w-[26px] md:h-[26px]"
+          />
+          <span className="text-lg md:text-xl font-bold">Web</span>
         </div>
 
-        <ul className="flex gap-[30px] w-[347px] h-[18px] text-[18px] font-normal ">
-          <li>Home</li>
-          <li>Portfolio</li>
-          <li>Skills</li>
-          <li>About Me</li>
+        <ul className="flex flex-wrap justify-center gap-4 sm:gap-8 text-base md:text-lg font-normal">
+          <li>
+            <a href="#hero" className="hover:underline">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#portfolio" className="hover:underline">
+              Portfolio
+            </a>
+          </li>
+          <li>
+            <a href="#skills" className="hover:underline">
+              Skills
+            </a>
+          </li>
+          <li>
+            <a href="#about" className="hover:underline">
+              About Me
+            </a>
+          </li>
         </ul>
-      </footer>
-    </section>
+      </div>
+    </footer>
   );
 }
 

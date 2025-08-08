@@ -1,33 +1,30 @@
 function PortfolioCard() {
   return (
-    <div className="w-[360px] h-[419px] relative rounded-[10px] border-[1px] border-[#646464]">
+    <div className="rounded-lg border border-[#646464] p-4 flex flex-col gap-4 bg-black">
       <img
-        className="w-[300px] h-[200px] absolute top-[30px] left-[30px] rounded-[10px]"
         src="./PortfolioCardImage.png"
+        alt="portfolio"
+        className="w-full h-auto rounded-lg"
       />
 
-      <div className="absolute top-[253px] left-[30px]">
-        <h4 className="font-bold text-[24px] leading-[100%] tracking-normal text-white w-[232px] h-[24px]">
-          Chaintech Product
-        </h4>
-        <div className="flex items-center gap-[5px] text-black test-[14px] leading-[100%] tracking-normal font-normal w-[86px] h-[24px] absolute top-[49px]">
-          <span className="bg-[#E9DFFC] rounded-[12px] border-[1px] border-[#BE9FF6] pt-[4px] pr-[8px] pb-[4px] pl-[8px] whitespace-nowrap">
-            UX Design
-          </span>
-          <span className="bg-[#E9DFFC] rounded-[12px] border-[1px] border-[#BE9FF6] pt-[4px] pr-[8px] pb-[4px] pl-[8px]">
-            Angular
-          </span>
-          <span className="bg-[#E9DFFC] rounded-[12px] border-[1px] border-[#BE9FF6] pt-[4px] pr-[8px] pb-[4px] pl-[8px]">
-            JavaScript
-          </span>
+      <div>
+        <h4 className="font-bold text-xl text-white">Chaintech Product</h4>
+        <div className="flex flex-wrap gap-2 mt-3">
+          {["UX Design", "Angular", "JavaScript"].map((tag, idx) => (
+            <span
+              key={idx}
+              className="bg-[#E9DFFC] text-black rounded-full border border-[#BE9FF6] px-3 py-1 text-sm"
+            >
+              {tag}
+            </span>
+          ))}
         </div>
       </div>
 
-      <button className="absolute w-[300px] h-[40px] top-[349px] left-[30px] px-[12px] py-[24px] bg-[#292929] text-white flex items-center justify-center">
-        View Product detail
+      <button className="bg-[#292929] text-white py-3 rounded text-center mt-auto">
+        View Product Detail
       </button>
     </div>
   );
 }
-
 export default PortfolioCard;

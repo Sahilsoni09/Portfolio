@@ -1,12 +1,16 @@
 function Stats() {
   return (
-    <section
-      id="stats"
-      className=" max-w-[1531px] h-[373px] absolute top-[941px] left-[99px] rounded-[29px] border-[1px] pt-[82px] pb-[82px] gap-[10px] flex flex-col bg-[#0B0B0B] border-[#646464]"
-    >
-      <img src="./stats.png" className="w-[1532px] h-[209px] object-cover" />
+    <section id="stats" className="my-12">
+      <div className="max-w-[1728px] mx-auto px-4 md:px-12">
+        <div className="bg-[#0B0B0B] border border-[#646464] rounded-2xl p-4 md:p-8">
+          <img
+            src="./stats.png"
+            alt="stats"
+            className="w-full h-auto object-cover rounded-xl"
+          />
+        </div>
+      </div>
     </section>
   );
 }
-
 export default Stats;

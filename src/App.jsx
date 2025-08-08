@@ -8,7 +8,7 @@ import Stats from "./Stats";
 
 function App() {
   return (
-    <div className=" bg-black flex flex-1 flex-col min-h-screen overflow-x-hidden relative font-poppins scroll-smooth">
+    <div className="bg-black flex flex-col min-h-screen font-poppins scroll-smooth">
       <Nav />
       <Hero />
       <Stats />
